@@ -1,0 +1,76 @@
+{
+  "results": [
+    {
+      "name": "console-errors-0",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "no-overflow-1920",
+      "ok": true,
+      "detail": "delta=0"
+    },
+    {
+      "name": "hero-textReveal-completed",
+      "ok": true,
+      "detail": "opacity=1"
+    },
+    {
+      "name": "field-state-live",
+      "ok": true,
+      "detail": "ring · phase 000%"
+    },
+    {
+      "name": "morph-scrub-updates-state",
+      "ok": true,
+      "detail": "vortex · phase 039%"
+    },
+    {
+      "name": "ladder-bars-drawn",
+      "ok": true,
+      "detail": "8/8"
+    },
+    {
+      "name": "tiles-revealed-12",
+      "ok": true,
+      "detail": "12/12"
+    },
+    {
+      "name": "axe-1920-clean",
+      "ok": true,
+      "detail": "clean"
+    },
+    {
+      "name": "no-overflow-390",
+      "ok": true,
+      "detail": "delta=0"
+    },
+    {
+      "name": "axe-390-clean",
+      "ok": true,
+      "detail": "clean"
+    },
+    {
+      "name": "console-errors-390-0",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "no-js-readable",
+      "ok": true,
+      "detail": "opacity=1"
+    },
+    {
+      "name": "reduced-motion-hero-visible",
+      "ok": true,
+      "detail": "opacity=1"
+    },
+    {
+      "name": "reduced-motion-field-static",
+      "ok": true,
+      "detail": "static frame · reduced motion honoured"
+    }
+  ],
+  "fails": 0,
+  "pass": 14
+}

@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Motion Lab: an MCP fleet production</title>
+  <meta name="description" content="A motion showcase whose every value — easings, durations, staggers, scrub triggers, QA gates — was harvested live from the AI-CITY premium MCP fleet.">
+  <script>document.documentElement.classList.add('js');</script>
+  <link rel="preload" href="fonts/playfair-display-variable.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/inter-variable.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/motion-lab.css">
+</head>
+<body>
+  <canvas id="field" aria-hidden="true"></canvas>
+
+  <a class="ml-skip" href="#main">Skip to content</a>
+
+  <header class="ml-bar">
+    <span class="ml-bar__mark">Motion Lab</span>
+    <span class="ml-bar__meta" id="barMeta">payload: live stdio harvest, 10 tools, 5 servers</span>
+  </header>
+
+  <main id="main">
+
+    <!-- 01 · HERO -->
+    <section class="hero" id="hero" aria-labelledby="heroTitle">
+      <h1 class="hero__title" id="heroTitle">
+        <span class="line"><span>The motion system</span></span>
+        <span class="line"><span>is the exhibit</span></span>
+      </h1>
+      <p class="instrument" id="heroInstrument" data-fill="textReveal">pattern: textReveal, ease: expoOut, 820ms</p>
+      <p class="hero__lead">
+        Every value here was returned live by the city’s premium MCP fleet.
+        Nothing is decorative.
+      </p>
+      <p class="hero__cue" aria-hidden="true">Scroll to scrub the field</p>
+    </section>
+
+    <!-- 02 · EASINGS -->
+    <section class="sec" id="easings" aria-labelledby="easingsTitle">
+      <header class="sec__head">
+        <h2 class="sec__title" id="easingsTitle">Easing, as data</h2>
+        <p class="instrument" id="easingsInstrument" data-fill="easings">6 curves, from get-motion-system</p>
+      </header>
+      <ul class="ease-grid" id="easeGrid" role="list"><!-- cards injected from MCP.motion.easing --></ul>
+    </section>
+
+    <!-- 03 · THE FIELD (signature: scroll-scrubbed morph) -->
+    <section class="fieldsec" id="morph" aria-labelledby="morphTitle">
+      <div class="fieldsec__sticky">
+        <header class="sec__head">
+          <h2 class="sec__title" id="morphTitle">One field, four states</h2>
+          <p class="instrument" id="morphInstrument" data-fill="morph">trigger: cinematic, scrub: true, morph: 1000ms spring</p>
+        </header>
+        <div class="fieldsec__panel">
+          <p class="fieldsec__state" id="fieldState">grid · phase 000%</p>
+          <p class="fieldsec__hint">Scroll drives the morph. The cursor repels the field.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 04 · STAGGER -->
+    <section class="sec" id="stagger" aria-labelledby="staggerTitle">
+      <header class="sec__head">
+        <h2 class="sec__title" id="staggerTitle">Stagger, at 120 milliseconds</h2>
+        <p class="instrument" id="staggerInstrument" data-fill="stagger">stagger.base: 120ms, 12 tiles</p>
+      </header>
+      <ul class="tile-grid" id="tileGrid" role="list"><!-- tiles injected --></ul>
+    </section>
+
+    <!-- 05 · DURATIONS -->
+    <section class="sec" id="durations" aria-labelledby="durationsTitle">
+      <header class="sec__head">
+        <h2 class="sec__title" id="durationsTitle">The duration ladder</h2>
+        <p class="instrument" id="durationsInstrument" data-fill="durations">instant 100ms to cinematic 2000ms</p>
+      </header>
+      <dl class="ladder" id="ladder"><!-- ladder rows injected --></dl>
+    </section>
+
+    <!-- 06 · QA -->
+    <section class="sec" id="qa" aria-labelledby="qaTitle">
+      <header class="sec__head">
+        <h2 class="sec__title" id="qaTitle">Gates this page answers to</h2>
+        <p class="instrument" id="qaInstrument" data-fill="qa">8 gates, from get-qa-checks</p>
+      </header>
+      <ul class="qa-list" id="qaList" role="list"><!-- rows injected --></ul>
+    </section>
+
+  </main>
+
+  <footer class="ml-foot">
+    <p>
+      Built from live payloads: <span class="mono">data/mcp-premium/*.json</span>,
+      harvested over MCP stdio from the fixed premium-* servers, 2026-10-28.
+      Zero dependencies. One accent. No fake motion.
+    </p>
+  </footer>
+
+  <script type="module" src="js/lab.js"></script>
+</body>
+</html>

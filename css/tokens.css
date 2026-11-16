@@ -1,0 +1,32 @@
+/* Hallmark · genre: editorial · nav: basic · footer: basic · hero: field-plate · posture: expressive · axes: navy/display/accent · contrast: pass · v1.0.0 */
+/* Hallmark · pre-emit critique: P5 H5 E5 S5 R5 V5 · weakest: S (many live surfaces) · fix: one canvas, one accent, composite-only motion */
+/* Motion Lab tokens — the ONLY file in this site where colour literals may appear.
+   Source of every value: data/mcp-premium/premium-design-mcp--get-design-tokens.json
+   (harvested live from premium-design-mcp.get-design-tokens). Names are ours, values are theirs. */
+
+:root {
+  /* surfaces — the design MCP's navy system */
+  --ml-bg-deep: #0b0e1a;
+  --ml-bg-mid: #151a30;
+  --ml-bg-soft: #1e253b;
+
+  /* ink */
+  --ml-ink: #f8f6f2;
+  --ml-ink-soft: #c2c9de;
+  --ml-ink-dim: #9aa6d6;
+
+  /* the single accent — gold family */
+  --ml-gold: #c9a227;
+  --ml-gold-soft: #d4af5f;
+  --ml-gold-bright: #e5c26e;
+  --ml-glow: rgba(201, 162, 39, 0.45);
+
+  /* structure */
+  --ml-line: #4a5a7c;
+  --ml-line-soft: rgba(74, 90, 124, 0.38);
+
+  /* type — the MCP's own font stack */
+  --ml-display: "Playfair Display", Georgia, "Times New Roman", serif;
+  --ml-body: "Inter", ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+  --ml-mono: ui-monospace, "Cascadia Code", Consolas, monospace;
+}
